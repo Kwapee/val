@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Val's Day Nyameke</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url("https://th.bing.com/th/id/OIP.4BJEzgJAJe4Ylj4PCR69WQHaE7?w=500&h=333&rs=1&pid=ImgDetMain");
+    }
+    #message-icon {
+      width: 200px;
+      height: 200px;
+      background-image: url('https://th.bing.com/th/id/R.bd1f1eb02b428c13489a9504411e8ea7?rik=gKdsrEbPRDqxDw&pid=ImgRaw&r=0'); /* Replace with the path to your message icon image */
+      background-size: cover;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+    #message {
+      display: none;
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-top: 10px;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn{
+        padding: 20px;
+        color: #000;
+    }
+    .smile{
+        color: red;
+    }
+  </style>
+</head>
+<body>
+    <br><br><br><br><br>
+  <div id="message-icon" onclick="showMessage()"></div>
+  <div id="message">
+    <p>Hey Nyameke,<br><br>
+On this Valentine's Day, I just wanted to take a moment to remind you of how much your friendship means to me. You've been there through thick and thin, always offering support, laughter, and a listening ear. Your kindness and warmth light up my life in ways I can't even express.
+Today isn't just about romantic love,it's about celebrating all forms of love, including the beautiful bond we share as friends. So here's to us, to our unforgettable memories, and to many more adventures together.
+Happy Valentine's Day, Odoyewu. You are loved and cherished more than words can say.<br><br>
+With love,<br>
+Kofi.
+</p>
+<br><br><br>
+  </div>
+  <section>
+    <div class="btn">
+        <h1>click image <span class="smile">:)</span></h1>
+    </div>
+  </section>
+</body>
+
+  <script>
+    function showMessage() {
+      var message = document.getElementById('message');
+      message.style.display = (message.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
