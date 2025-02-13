@@ -14,41 +14,63 @@
       height: 100vh;
       margin: 0;
       background-image: url("https://th.bing.com/th/id/OIP.4BJEzgJAJe4Ylj4PCR69WQHaE7?w=500&h=333&rs=1&pid=ImgDetMain");
+      background-size: cover;
+      background-position: center;
     }
 
     #message-icon {
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       background-image: url('https://th.bing.com/th/id/R.bd1f1eb02b428c13489a9504411e8ea7?rik=gKdsrEbPRDqxDw&pid=ImgRaw&r=0');
-      /* Replace with the path to your message icon image */
       background-size: cover;
       cursor: pointer;
       border-radius: 20px;
+      margin-bottom: 20px;
     }
 
     #message {
       display: none;
-      width: 500px;
-      background-color: #fff;
+      max-width: 90%;
+      background-color: rgba(255, 255, 255, 0.9);
       border: 1px solid #ccc;
       padding: 15px;
-      margin-top: 10px;
       box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      text-align: center;
     }
 
     .btn {
-      padding: 20px;
-      color: #000;
+      padding: 10px;
+      text-align: center;
     }
 
     .smile {
       color: red;
     }
+
+    h1 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      #message-icon {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 1.2em;
+      }
+
+      #message {
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br>
   <div id="message-icon" onclick="showMessage()"></div>
   <div id="message">
     <p>Hey Lilian,<br><br>
@@ -67,24 +89,22 @@
       So on this day of love, I simply want to say thank you... thank you for being an amazing part of my life ( Just that your somethings you just dey get on my nervous with your attitudes but i guess that`s all that makes this special) I
       cherish you and look forward to our future together.<br><br>
 
-      Happy Valentine's Day!"<br>
+      Happy Valentine's Day!"<br>
       Perry.
     </p>
-    <br><br><br>
   </div>
   <section>
     <div class="btn">
-      <h1>click image <span class="smile">:)</span></h1>
+      <h1>Click image <span class="smile">:)</span></h1>
     </div>
   </section>
-</body>
 
-<script>
-  function showMessage() {
-    var message = document.getElementById('message');
-    message.style.display = (message.style.display === 'block') ? 'none' : 'block';
-  }
-</script>
+  <script>
+    function showMessage() {
+      var message = document.getElementById('message');
+      message.style.display = (message.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
 </body>
 
 </html>
